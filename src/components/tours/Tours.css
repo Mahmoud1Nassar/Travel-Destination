@@ -1,0 +1,13 @@
+/* Tours.css */
+.tour {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .tour h2 {
+    margin-bottom: 10px;
+  }
+  .tour img {
+    max-width: 100%;
+  }
+  
