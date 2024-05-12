@@ -1,8 +1,12 @@
-/* Header.css */
-.header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+/* CSS code for styling header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+

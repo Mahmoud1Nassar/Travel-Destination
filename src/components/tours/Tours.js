@@ -1,18 +1,21 @@
-import React from "react";
-import toursData from "../../data/db.json";
-import "../tours/Tours.css";
+import "./Tours.css";
+import Tour from "../tours/tour/Tour";
+const tourData = require("../../data/db.json");
 
-const Tours = () => {
+function Tours() {
   return (
-    <div>
-      {toursData.map((tour) => (
-        <div key={tour.id}>
-          <h2>{tour.name}</h2>
-          <img src={tour.image} alt={tour.name} />
-        </div>
-      ))}
-    </div>
+    <>
+      <div>
+        {tourData.map((element) => (
+          <Tour
+            id={element.id}
+            city_name={element.name}
+            city_image={element.image}
+          />
+        ))}
+      </div>
+    </>
   );
-};
+}
 
 export default Tours;

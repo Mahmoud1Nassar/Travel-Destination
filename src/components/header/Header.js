@@ -1,6 +1,13 @@
-import React from "react";
-import '../header/Header.css';
-const Header = () => {
-    return <h1>Travel Destination</h1>
-};
+import './Header.css';
+import Navbar from '../Navbar/Navbar';
+
+function Header() {
+    return (
+      <>
+      <h1>Mahmoud Travel Destination App </h1>
+      <Navbar />
+      </>
+    );
+  }
+
 export default Header;
